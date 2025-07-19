@@ -1,5 +1,5 @@
 name: Pipeline Name 🚀
-run-name: Run Name - ${{github.run_number}} 🚀
+run-name: Evecution - v${{github.run_number}}.${{github.run_attempt}} by ${{github.triggering_actor}} 🚀
 # Controls when the workflow will run
 on: 
   workflow_dispatch:
