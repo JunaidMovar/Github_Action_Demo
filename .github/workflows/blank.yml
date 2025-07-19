@@ -23,3 +23,7 @@ jobs:
         run:  df -h
       - name:  Check Java Version
         run:  java -version
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'coretto' # See 'Supported distributions' for available options
+          java-version: '8'
