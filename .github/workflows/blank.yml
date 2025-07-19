@@ -17,3 +17,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      - name:  Check RAM
+        run: free -h
+      - name:  Check Storage
+        run:  df -h
+      - name:  Check Java Version
+        run:  java -version
