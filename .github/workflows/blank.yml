@@ -1,5 +1,5 @@
 name: Pipeline Name
-
+run-name: Run Name - ${{github.run_number}}
 # Controls when the workflow will run
 on: 
   workflow_dispatch:
