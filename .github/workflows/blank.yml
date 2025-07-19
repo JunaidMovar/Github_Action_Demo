@@ -33,3 +33,5 @@ jobs:
         with:
           distribution: 'corretto' # See 'Supported distributions' for available options
           java-version: '8'
+      - name: Print the Input variable from Textbox
+        run:  "Entered Value : ${{github.event.inputs.firstname}}"
