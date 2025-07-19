@@ -1,5 +1,5 @@
-name: Pipeline Name
-run-name: Run Name - ${{github.run_number}}
+name: Pipeline Name 🚀
+run-name: Run Name - ${{github.run_number}} 🚀
 # Controls when the workflow will run
 on: 
   workflow_dispatch:
@@ -42,4 +42,8 @@ jobs:
           distribution: 'corretto' # See 'Supported distributions' for available options
           java-version: '8'
       - name: Print the Input variable from Textbox
-        run:  "Entered Value : ${{github.event.inputs.firstname}}"
+        run:  echo "Entered Value - ${{github.event.inputs.firstname}}"
+      - name: This is how we use Variables 
+        run:  echo "${{vars.VARIABLE_VAR}}"
+      - name: This is how we use Secrets
+        run: echo "${{secrets.SECRET_VAR}}"
